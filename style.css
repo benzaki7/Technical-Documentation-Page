@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 20vw;
+    background-color: #eaeaea;
+    border-right: solid 2px #212121;
+}
+#navbar h1 {
+    font-size: 2rem;
+    color: #212121;
+    text-align: center;
+    padding: 0 5px;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#navbar a {
+    display: block;
+    font-size: 1.3rem;
+    color: #212121;
+    padding: 20px 5px 20px 10px;
+    border-top: solid 1px #212121;
+    cursor: pointer;
+}
+#navbar li:last-child {
+    border-bottom: solid 1px #212121;
+}
+#navbar a:hover {
+    transition: ease .5s;
+    background-color: #222831;
+    color: #eaeaea;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 20vw;
+    padding: 20px 0 20px 20px;
+    width: 75vw;
+}
+.main-section h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.main-section h2{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.main-section p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5;
+}
+.main-section ol{
+    line-height: 2;
+    text-align: justify;
+}
+.main-section ul{
+    line-height: 2;
+    text-align: justify;
+}
+.main-section code{
+    display: block;
+    background-color: #eaeaea;
+    padding: 10px 100px 10px 20px;
+    margin: 20px 0;
+    border-left: solid 5px #3f72af;
+}
+
+.main-section xmp{
+    display: block;
+    background-color: #eaeaea;
+    padding: 10px 0px 10px 20px;
+    border-left: solid 5px #3f72af;
+}
+
+@media screen and (max-width: 805px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-height: 31vh;
+        z-index: 1;
+        border-bottom: solid 1px #212121;
+        overflow: auto;
+    }
+    #navbar h1 {
+        font-size: 1.5rem;
+    }
+    #navbar a {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+    #main-doc {
+        width: auto;
+        position: relative;
+        margin-left: 0;
+        margin-top: 30vh;
+        padding: 20px;
+    }
+    .main-section xmp{
+        overflow: auto;
+    }
+    .main-section .img1, .main-section .img2 {
+        width: 100%;
+    }
+}
